@@ -31,7 +31,6 @@ if [ "$M2SETUP_USE_SAMPLE_DATA" = true ]; then
     echo "Ignore the above error (bug in Magento), fixing with 'composer update'..."
     /usr/local/bin/php -d memory_limit=2G /usr/local/bin/composer update
   fi
-
   M2SETUP_USE_SAMPLE_DATA_STRING="--use-sample-data"
 else
   M2SETUP_USE_SAMPLE_DATA_STRING=""
