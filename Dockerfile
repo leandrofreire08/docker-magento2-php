@@ -45,17 +45,6 @@ COPY conf/php.ini /usr/local/etc/php/
 COPY conf/php-fpm.conf /usr/local/etc/
 COPY bin/* /usr/local/bin/
 
-# Make ssh dir
-RUN mkdir /root/.ssh/
-
-# Copy over private key, and set permissions
-ADD id_rsa /root/.ssh/
-
-# Create known_hosts
-RUN touch /root/.ssh/known_hosts
-# Add githubs key
-RUN ssh-keyscan github.com >> /root/.ssh/known_hosts
-
 WORKDIR /srv/www
 
 CMD ["/usr/local/bin/start"]
