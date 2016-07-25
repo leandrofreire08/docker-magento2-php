@@ -1,5 +1,5 @@
 FROM nginx:1.10.1
-MAINTAINER Mark Shust <mark.shust@mageinferno.com>
+MAINTAINER Leandro Freire <leandro.freire08@gmail.com>
 
 ENV PHP_HOST phpfpm
 ENV PHP_PORT 9000

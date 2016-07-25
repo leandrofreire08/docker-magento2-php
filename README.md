@@ -1,7 +1,7 @@
 # Versions
 
-- [`1.10.1-0` (_Dockerfile_)](https://github.com/mageinferno/docker-magento2-nginx/tree/1.10.1-0/Dockerfile)
-- [`1.9.14-0` (_Dockerfile_)](https://github.com/mageinferno/docker-magento2-nginx/tree/1.9.14-0/Dockerfile)
+- [`1.10.1-0` (_Dockerfile_)](https://github.com/leandrofreire08/docker-magento2-nginx/tree/1.10.1-0/Dockerfile)
+- [`1.9.14-0` (_Dockerfile_)](https://github.com/leandrofreire08/docker-magento2-nginx/tree/1.9.14-0/Dockerfile)
 
 # Description
 
@@ -23,4 +23,4 @@ The following environment variables are used for Nginx configuration:
 
 # Docker Compose
 
-Please see [https://github.com/mageinferno/magento2-docker-compose](https://github.com/mageinferno/magento2-docker-compose) for more detailed instructions and an example development environment using Docker Compose.
+Please see [https://github.com/leandrofreire08/magento2-docker-compose](https://github.com/leandrofreire08/magento2-docker-compose) for more detailed instructions and an example development environment using Docker Compose.
