@@ -1,4 +1,4 @@
-FROM php:7.0.8-fpm
+FROM php:5.6.23-fpm
 MAINTAINER Leandro Freire <leandro.freire@gmail.com>
 
 RUN apt-get update \
