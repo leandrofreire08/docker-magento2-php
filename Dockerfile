@@ -1,6 +1,9 @@
 FROM php:7.0.8-fpm
 MAINTAINER Leandro Freire <leandro.freire@gmail.com>
 
+RUN echo "postfix postfix/mailname string localhost" | debconf-set-selections
+RUN echo "postfix postfix/main_mailer_type string 'Internet Site'" | debconf-set-selections
+
 RUN apt-get update \
   && apt-get install -y \
     cron \
@@ -10,7 +13,8 @@ RUN apt-get update \
     libmcrypt-dev \
     libpng12-dev \
     libxslt1-dev \
-    git
+    git \
+    postfix
 
 RUN docker-php-ext-configure \
   gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
