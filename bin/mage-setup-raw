@@ -16,7 +16,6 @@ if [ "$M2SETUP_USE_ARCHIVE" = true ]; then
     curl -L http://pubfiles.nexcess.net/magento/ce-packages/magento2-$M2SETUP_VERSION.tar.gz | tar xzf - -o -C .
   fi
 elif [ "$M2SETUP_USE_CUSTOM_REPOSITORY" = true ]; then
-  rm -rf * && rm -rf .[!.]*
   git clone -b staging https://$M2SETUP_CUSTOM_REPOSITORY_TOKEN:x-oauth-basic@github.com/$M2SETUP_COMPANY/$M2SETUP_CUSTOM_REPOSITORY.git .
   composer install
 else
